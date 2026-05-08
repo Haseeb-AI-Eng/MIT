@@ -68,7 +68,6 @@ project/
 ### Prerequisites
 
 - **Node.js** >= 18.x
-<<<<<<< HEAD
 - **MongoDB** running locally on `mongodb://localhost:27017`
 
 ### 1. Start the Backend
@@ -185,77 +184,6 @@ Edit `backend/scraper.js` → `startCronJob()` function. Default: every 6 hours.
 ### Database Connection
 
 Edit `MONGO_URI`, `DB_NAME`, and `COLLECTION_NAME` in `backend/server.js` and `backend/scraper.js`.
-=======
-- **npm** or **pnpm**
-
-### Installation
-
-```bash
-# Install dependencies
-npm install
-```
-
-### Development
-
-```bash
-# Start the dev server (http://localhost:5173)
-npm run dev
-```
-
-### Production Build
-
-```bash
-# Build for production
-npm run build
-
-# Preview the production build locally
-npm run preview   # (if available) or serve the dist/ folder
-```
-
-## Available Scripts
-
-| Command          | Description                        |
-|------------------|------------------------------------|
-| `npm run dev`    | Start the Vite development server  |
-| `npm run build`  | Build the app for production       |
-
-## Routing
-
-| Route                  | Description                    |
-|------------------------|--------------------------------|
-| `/`                    | Homepage with full news grid   |
-| `/article/:slug`       | Individual article detail page |
-
-The `ScrollToTop` component ensures the page scrolls to the top on every route change.
-
-## Customization
-
-### Adding New Articles
-
-Edit the `articles` array in `src/app/App.tsx` (or the dedicated `src/app/data/articles.ts` if extracted). Each article should include:
-
-```ts
-{
-  id: number,
-  slug: string,          // URL-friendly identifier (e.g. "my-new-article")
-  title: string,
-  image: string,         // Image URL
-  category: string,      // e.g. "Research", "News", "Event"
-  shortDescription: string,
-}
-```
-
-### Modifying the Layout
-
-- **Header** — `src/app/components/Header.tsx`
-- **Sidebar** — `src/app/components/Sidebar.tsx`
-- **Footer** — `src/app/components/Footer.tsx` or the inline footer in `App.tsx`
-- **News Cards** — `src/app/components/NewsCard.tsx`
-
-### Theme & Styling
-
-The project uses **Tailwind CSS v4** with the `@tailwindcss/vite` plugin. Global styles are defined in `src/styles/index.css`. Modify utility classes directly in components or add custom CSS there.
->>>>>>> 471c3bdcb0025b35bd8e026b5312943bec485459
 
 ## License
 
