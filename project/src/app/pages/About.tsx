@@ -160,8 +160,8 @@ export function About() {
   return (
     <div className="min-h-screen bg-white">
       <section className="relative overflow-hidden bg-black text-white">
-        <img src="/image.gif" alt="About background" className="absolute inset-0 w-full h-full object-cover opacity-60" />
-        <div className="absolute inset-0 bg-black/50" />
+        <img src="/about.png" alt="About background" className="absolute inset-0 w-full h-full object-cover opacity-85" />
+        <div className="absolute inset-0 bg-black/45" />
         <div className="relative mx-auto max-w-[1200px] px-6 py-24 text-center">
           <p className="text-[12px] uppercase tracking-[0.35em] text-white/60 mb-4">About the Lab</p>
           <h1 className="text-[36px] md:text-[56px] font-bold leading-tight md:leading-[1.05] max-w-4xl mx-auto">
