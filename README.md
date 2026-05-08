@@ -1,51 +1,5 @@
 # MIT Media Lab Website
 
-<<<<<<< HEAD
-A live, auto-updating news aggregator for MIT Media Lab articles. Scrapes [news.mit.edu](https://news.mit.edu) in real-time, stores articles in MongoDB, and serves them via a REST API to a React frontend.
-
-## Features
-
-- **Live scraping** — Fetches articles from MIT News topic pages (Media Lab, AI, robotics, health, design, etc.)
-- **MongoDB storage** — All scraped articles persisted in `MITnews.mitn` collection
-- **Auto-refresh** — Re-scrapes every 6 hours via cron job; manual trigger via API
-- **Full-text search** — Search across titles, descriptions, categories, and full article content
-- **Responsive news grid** — Masonry-style layout with cards of varying sizes
-- **Article detail pages** — Dynamic routing (`/article/:slug`) with full content and related articles
-- **Smooth animations** — Framer Motion for page transitions and scroll effects
-- **Sticky header** — Transparent-to-solid header with slide-out search panel (`Ctrl+K`)
-
-## Architecture
-
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  Frontend   │────▶│   Backend    │────▶│   MongoDB   │
-│  (React)    │     │  (Express)   │     │  (MITnews)  │
-│  :5173      │     │  :4000       │     │  mitn coll. │
-└─────────────┘     └─────────────┘     ─────────────┘
-                           │
-                    ┌──────▼───────┐
-                    │   Scraper    │
-                    │ (Cheerio)    │
-                    └─────────────┘
-                           │
-                    ┌──────▼───────┐
-                    │ news.mit.edu │
-                    └──────────────┘
-```
-
-## Tech Stack
-
-| Layer        | Technology                              |
-|-------------|-----------------------------------------|
-| Frontend    | React 18, React Router DOM v7            |
-| Backend     | Express.js, Axios, Cheerio               |
-| Database    | MongoDB (`MITnews` → `mitn`)             |
-| Build       | Vite 6                                   |
-| Styling     | Tailwind CSS v4                          |
-| Animations  | Framer Motion                            |
-| Scheduling  | node-cron (every 6 hours)                |
-| Icons       | Lucide React                             |
-=======
 A modern, responsive website inspired by the [MIT Media Lab](https://www.media.mit.edu/) homepage. Built with React, Vite, Tailwind CSS, and React Router, it features a dynamic news grid, article detail pages, animated transitions, and a polished editorial layout.
 
 ## Features
@@ -108,7 +62,6 @@ project/
 ├── package.json            # Dependencies & scripts
 └── README.md               # This file
 ```
->>>>>>> 471c3bdcb0025b35bd8e026b5312943bec485459
 
 ## Getting Started
 
